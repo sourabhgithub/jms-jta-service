@@ -20,13 +20,10 @@ spring.activemq.packages.trust-all=false
 spring.activemq.packages.trusted=com.qnq.jmsjta
 spring.activemq.pool.block-if-full=true
 spring.activemq.pool.block-if-full-timeout=-1
-spring.activemq.pool.create-connection-on-startup=true
 spring.activemq.pool.enabled=false
-spring.activemq.pool.expiry-timeout=0
 spring.activemq.pool.idle-timeout=30000
 spring.activemq.pool.max-connections=1
-spring.activemq.pool.maximum-active-session-per-connection=500
-spring.activemq.pool.reconnect-on-exception=true
+spring.activemq.pool.max-sessions-per-connection=500
 spring.activemq.pool.time-between-expiration-check=-1
 spring.activemq.pool.use-anonymous-producers=true
 

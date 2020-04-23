@@ -29,7 +29,8 @@ In logs you will also see that JMS consumer has received some messages:
 As you see operation "transactional/with_clone/create" inserts 2 records. It will be used later to demonstrate data rollback.
 Now let's modify our queries to not provide any usernames for new users. Which should lead database insertion errors because field username must not be null.
 
-* http://localhost:8081/users/transactional/create
+* http://localhost:8081/users/t
+ransactional/create
 * http://localhost:8081/users/transactional/with_clone/create
 * http://localhost:8081/users/all
 

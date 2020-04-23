@@ -11,7 +11,7 @@ import org.springframework.jms.support.converter.MessageType;
 
 @EnableJms
 @Configuration
-public class Configurations {
+public class ActiveMQConfig {
 
   public static final String MESSAGE_QUEUE = "message-queue";
 

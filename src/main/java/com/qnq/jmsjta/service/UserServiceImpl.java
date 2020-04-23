@@ -1,20 +1,14 @@
 package com.qnq.jmsjta.service;
 
-import static com.qnq.jmsjta.config.Configurations.MESSAGE_QUEUE;
+import static com.qnq.jmsjta.config.ActiveMQConfig.MESSAGE_QUEUE;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
-import javax.transaction.Transactional;
 
 import com.qnq.jmsjta.entity.UserEntity;
 import com.qnq.jmsjta.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 

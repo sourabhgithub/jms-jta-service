@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import javax.jms.Session;
 import javax.transaction.Transactional;
 
-import static com.qnq.jmsjta.config.Configurations.MESSAGE_QUEUE;
+import static com.qnq.jmsjta.config.ActiveMQConfig.MESSAGE_QUEUE;
 
 @Slf4j
 @Component
